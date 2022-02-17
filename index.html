@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast Channel Front-End Developers</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/fontawesome.css">     
+    <link rel="stylesheet" href="styles/brands.css">    
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="logo">
+        <nav>
+            <div class="menu">
+                <input type="checkbox"/>
+                <span></span>
+                <span></span>
+                <span></span>           
+                <ul>
+                    <li><a href="#episodios-link">EPISODIOS</a></li>
+                    <li><a href="#nosotros">NOSOTROS</a></li>
+                    <li><a href="#entrevistas">ENTREVISTAS</a></li>
+                    <li><a href="#topicos">TÓPICOS</a></li>
+                </ul>
+           </div>
+       </nav>
+    </header>   
+    <main>
+
+        <!--Section 1 informacion general-->
+        <section id="section1">
+            <article>              
+                <h1>Hello <span id="line-through">world</span> <span>pale blue dot</span><span id="dot">.</span></h1>
+                <div id="mobile-1st">
+                    <p>Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
+                </div>   
+                <div id="desktop">
+                    <p>El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
+                </div>
+                <a class="btn" href="#">CONOCÉ MÁS</a>
+            </article>
+        </section>
+
+        <!--Section 2 Episodios spotify-->
+        <section id="section2">           
+                <h2><a id=episodios-link></a>Episodios</h2>          
+                <article id="iframe">  
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt"  allow="encrypted-media"></iframe>
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt"  allow="encrypted-media"></iframe>             
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"  allow="encrypted-media"></iframe>
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/7E4ViJGhPOAoMsZnVPcrId"  allow="encrypted-media"></iframe>
+                </article>                 
+        </section> 
+
+        <!--section 3 Historia - de donde venimos-->
+       <section id="section3">
+            <article id="section3-flex">               
+                <img src="images/phone.png" alt="image-Phone">  
+                <div>
+                    <h2><a id=nosotros></a>De dónde venimos</h2><br>              
+                    <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.
+                    <br><br>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+                    </p>
+                </div>            
+            </article>
+        </section>
+
+         <!--section 4- entrevistas invitados -->
+        <section id="section4"> 
+            <h2><a id=entrevistas></a>Invitadas/os estelares</h2><br>
+            <article id="img-section4">               
+                <img src="images/grace-hopper.png" alt="grace-hopper">
+                <img src="images/Katie-Bouman.png" alt="katie-bouman">
+                <img src="images/Margaret_Hamilton.png" alt="margaret-hamilton">
+                <img src="images/An-E.R.A..png" alt="an-ERA">
+                <img src="images/Computer-operators.png" alt="computer-operators">
+                <img src="images/susan-kare.png" alt="susan-kare">
+            </article>
+        </section>
+        
+        <!--section 5- temas-->
+        <section id="section5">
+            <h2><a id=topicos></a>Algunos de nuestros temas</h2>
+            <article id="center-section5"> 
+                <div>
+                    <img src="images/icon1.svg" alt="icono-1-temas">
+                    <h3>Trabajo remoto</h3>  
+                </div> 
+                <div>
+                    <img src="images/icon2.svg" alt="icono-2-temas">
+                    <h3>Repensando la programación</h3>
+                </div>
+                <div>
+                    <img src="images/icon3.svg" alt="icono-3-temas">
+                    <h3>Bases del código</h3>
+                </div>
+                <div>
+                    <img src="images/icon4.svg" alt="icono-4-temas">
+                    <h3>Seguridad informática</h3>
+                </div>
+            </article>
+        </section>
+
+        <!--section 6- novedades-->
+        <section id="section6">
+            <article id="novedades">
+                <h2>¿Querés las últimas novedades?</h2>              
+                <a class="btn" href="#">ESCUCHÁ LOS EPISODIOS</a> 
+            </article>           
+        </section>
+        
+     </main>  
+     
+     <!--footer- spotify- social media-->
+    <footer>
+        <div>
+            <p>© 2019 — Hello blue pale dot</p>
+        </div>
+        
+        <ul>
+            <li id="icons">
+                <a href="https://www.spotify.com/co/premium/?utm_source=co-es_brand_contextual-desktop_text&utm_medium=paidsearch&utm_campaign=alwayson_latam_co_premiumbusiness_core_brand+contextual-desktop+text+exact+co-es+google&gclid=EAIaIQobChMIvr-36_uW6gIVy5-zCh2l_AK8EAAYASAAEgIdjvD_BwE&gclsrc=aw.ds"><i class="fab fa-spotify"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/explore"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="https://web.telegram.org/#/login"><i class="fab fa-telegram"></i></a>
+            </li>        
+        </ul>
+    </footer>  
+
+</body>
+</html>

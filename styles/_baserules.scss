@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+  
+}
+
+body{       
+    background-color: $bg;}
+
+
+li{
+    list-style-type: none;   
+     
+}
+
+a{
+    text-decoration-line: none;
+    color: $color-text-menu;
+    font-family: 'IBM Plex Mono';
+    font-size: 16px; 
+} 
+
+i{
+
+    font-size: 16px;
+    color: $color-icons;
+    letter-spacing: 0;
+    line-height: 28px;
+
+}
+
+
+

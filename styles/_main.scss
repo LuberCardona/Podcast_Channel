@@ -1,0 +1,267 @@
+
+%btn{
+    display: block;
+    font-family: 'IBM Plex Mono', monospace;     
+    font-size: 16px;
+    color: $color-title-text;
+    letter-spacing: 0;    
+    text-align: center;   
+    background-color: $bg-btn;     
+    width: 288PX;
+    height: 48px;  
+    padding: 15px;
+    margin-top: 10%;  
+
+}
+ 
+%h2{
+    width: 288px;
+    height: 84px;   
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: 42px;
+    color: $color-title-section3-4-5;     
+    font-family: 'IBM Plex Sans', sans-serif;   
+   
+    
+}
+
+%p{    
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: $color-title-text;
+    letter-spacing: 0;
+    line-height: 22px;  
+               
+}
+
+%h3{   
+    font-family: 'IBM Plex Sans', sans-serif;   
+    font-size: 24px;
+    letter-spacing: 0;        
+    text-align: center;
+    color: $color-title-section3-4-5;  
+    margin-top: 5%;
+}
+
+body{
+
+    main{
+
+        //info general
+        #section1{
+            padding: 5%;
+            article{
+                
+                h1{   
+                    width: 240px;              
+                    font-size: 36px;
+                    letter-spacing: 0;
+                    line-height: 42px;
+                    color: $color-title-text;                   
+                    font-family: 'IBM Plex Sans', sans-serif;
+                    
+                    
+                }               
+                                
+                #line-through{                
+                    text-decoration: line-through;           
+                } 
+                
+                p{
+                   @extend %p;  
+                   margin-top: 5%;
+                } 
+                
+                #desktop{
+                    display: none;
+                }
+
+               
+                .btn{
+                     @extend %btn;                    
+                       
+                }
+        
+            }
+        }
+        
+        //episodios
+        #section2{     
+            height: 1200px;     
+            background-image: linear-gradient($sec2-5-gradient1, $sec2-5-gradient2);
+            clip-path: polygon(0 4%, 100% 0, 100% 96%, 0 100%);
+            padding: 20% 4% 0;               
+            
+        
+            h2{
+                font-family: 'IBM Plex Sans', sans-serif;
+                font-size: 36px;
+                color: $color-title-section2;
+                letter-spacing: 0;
+                line-height: 42px;
+                        
+            }
+        
+            #iframe{             
+                padding-top: 5%;                 
+                iframe{
+                    width: 100%;
+                    height: 232px;
+                    border: 0;
+                    background: rgba(0,0,0,0);
+                }
+            }
+        }
+
+        // de donde venimos
+        #section3{        
+            padding: 0 5% 0;  
+            transform: translateY(-100px);  
+
+            img{                     
+            width: 100%;   
+            padding-bottom: 2%;   
+            }
+
+            h2{
+            @extend %h2;
+            }
+
+        
+            p{
+            @extend %p;   
+            
+            }
+            
+            
+        }
+
+        // inviatados estelares
+        #section4{                       
+        
+
+            h2{
+                @extend %h2;  
+                padding: 0 5% 0%; 
+                font-family: 'IBM Plex Sans';        
+            }
+
+            img{
+              width: 100%;
+                
+            }
+
+            #img-section4{
+                display: grid;           
+                padding-top: 2%;
+            
+
+            }
+        }
+
+        //temas
+        #section5{ 
+            display: flex;
+            flex-direction: column; 
+            padding: 5%;           
+            
+            h2{
+                @extend %h2;               
+                font-family: 'IBM Plex Sans';        
+            }   
+
+            h3{
+                @extend %h3;
+            } 
+
+            #center-section5{
+                display: flex;
+                flex-direction: column;                
+                align-items: center;     
+             
+              div{
+                  margin-top: 15%;
+                  display: flex;
+                  flex-direction: column;
+                  img{
+                      align-items: center;
+                  }
+                }
+            }
+        }
+         // novedades
+        #section6{ 
+            height: 350px;             
+            background-image: linear-gradient(to bottom left, $sec2-5-gradient1, $sec2-5-gradient2);
+            clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+            margin-top: 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;           
+            align-items: center;
+            padding: 5%;          
+
+            h2{
+                @extend %h2;
+                height: 126px;          
+                font-size: 36px;   
+                color: $color-title-section6;     
+                font-family: 'IBM Plex Sans', sans-serif;          
+                text-align: center;           
+                width: 288px;
+                
+            }
+
+            .btn{
+                @extend %btn;           
+                width: 288px;  
+                align-self: center; 
+                
+             
+
+            }
+        }
+    }
+
+    //footer-spotify-social media
+    footer{
+        padding: 5%;
+        display: grid;
+        grid-template: 1fr 1fr / 1fr;
+        grid-gap: 20px;
+
+       p{
+        @extend %p;
+        text-align: center;
+        font-size: 14px;
+        margin-top: unset;
+        width: unset;  
+        height: unset; 
+       }
+       
+       #icons{
+           display: flex;
+           justify-content: space-evenly;       
+
+       }
+
+    }
+}
+
+
+
+  
+    
+
+
+
+        
+
+
+        
+
+
+        
+
+
